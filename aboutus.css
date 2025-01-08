@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('backgroun\ aboutus.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img-container img {
+    width: 75px; /* Set width and height to make the Pandoo logo square */
+    height: 75px;
+    border-radius: 0%; /* Square shape */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffcc99;
+    padding: 10px 20px;
+}
+
+.social-icons a {
+    margin-left: 2px;
+}
+
+.social-icons img {
+    width: 40px;  /* Keep social icons circular */
+    height: 40px;
+    border-radius: 50%; /* Circle shape for social icons */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: #333;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.box {
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    width: 80%;
+    overflow: hidden;
+}
+
+.box-left {
+    align-self: flex-start;
+    margin-right: auto;
+}
+
+.box-right {
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.box-image {
+    width: 50%;
+    height: auto;
+}
+
+.box-text {
+    padding: 20px;
+    width: 50%;
+}
+
+.box-text h2 {
+    margin-top: 0;
+}
+
+.box-text p {
+    margin-bottom: 0;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1024px) {
+    .box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box-image {
+        width: 100%;
+    }
+    .box-text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .img-container img {
+        width: 60px; /* Reduce logo size on smaller screens */
+        height: 60px;
+    }
+    .social-icons img {
+        width: 40px; /* Reduce icon size on smaller screens */
+        height: 40px;
+    }
+    .box-text h2 {
+        font-size: 18px;
+    }
+    .box-text p {
+        font-size: 14px;
+    }
+}
